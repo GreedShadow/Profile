@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal profile and portfolio of Mark Joseph Quimora.">
+  <title>Mark Joseph Quimora — Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero { display: flex; flex-direction: column; align-items: flex-start; gap: 55px; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Mark Joseph Quimora home"><span class="brand-avatar"><img src="profile-photo.png" alt=""></span> / PROFILE</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu <span>+</span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a class="nav-contact" href="#contact">Let's talk <span>↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell" id="about">
+      <div class="hero-copy">
+        <p class="eyebrow">PERSONAL PROFILE</p>
+        <h1>Mark Joseph<br><em>Quimora</em></h1>
+        <p class="hero-intro">A curious builder turning thoughtful ideas into clear, useful digital experiences. I care about the details that make a product feel effortless.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View selected work <span>↘</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Areas of focus">
+      <div class="ticker-track"><span>PRODUCT THINKING</span><b>✳</b><span>FRONT-END CRAFT</span><b>✳</b><span>VISUAL SYSTEMS</span><b>✳</b><span>PRODUCT THINKING</span><b>✳</b><span>FRONT-END CRAFT</span></div>
+    </section>
+
+    <section class="skills-section section-shell" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">02 / CAPABILITIES</p>
+        <h2>What I bring<br><em>to the work.</em></h2>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card skill-featured"><span class="card-number">01</span><span class="card-icon">✦</span><h3>Web<br>Development</h3><p>Creating responsive pages that are clear, useful, and easy to use.</p><div class="skill-tags"><span>HTML / CSS</span><span>JavaScript</span></div></article>
+        <article class="skill-card"><span class="card-number">02</span><span class="card-icon">{ }</span><h3>Systems<br>Thinking</h3><p>Breaking complex requirements into practical, dependable solutions.</p><div class="skill-tags"><span>Logic</span><span>Problem solving</span></div></article>
+        <article class="skill-card"><span class="card-number">03</span><span class="card-icon">◎</span><h3>Data &amp;<br>Technology</h3><p>Learning tools quickly and using technology to support real people.</p><div class="skill-tags"><span>Digital tools</span><span>Adaptable</span></div></article>
+        <article class="skill-card"><span class="card-number">04</span><span class="card-icon">↗</span><h3>Careful<br>Collaboration</h3><p>Communicating clearly and contributing with patience and ownership.</p><div class="skill-tags"><span>Teamwork</span><span>Reliable</span></div></article>
+      </div>
+    </section>
+
+    <section class="projects-section section-shell" id="projects">
+      <div class="projects-heading">
+        <div><p class="eyebrow">03 / SELECTED WORK</p><h2>A few things<br><em>I've made.</em></h2></div>
+        <p class="section-note">A small collection of explorations, experiments, and shipped ideas.</p>
+      </div>
+      <div class="project-grid">
+        <a class="project-card project-care" href="https://github.com/GreedShadow/CareDrop" target="_blank" rel="noopener noreferrer"><div class="project-visual visual-care"><span class="care-cross">+</span><span class="care-word">care<span>drop</span></span><span class="visual-label">CARE / 01</span></div><div class="project-meta"><div><p class="project-type">Community platform</p><h3>CareDrop</h3><p class="project-description">A thoughtful digital experience built to make support easier to discover and share.</p></div><span class="arrow">↗</span></div></a>
+      </div>
+    </section>
+
+    <section class="rationale-section section-shell" id="rationale">
+      <div class="rationale-intro"><p class="eyebrow">04 / LAYOUT RATIONALE</p><h2>Every layout<br><em>has a reason.</em></h2><p>This page is also a study in choosing the right tool. Flexbox handles content that flows in one direction; Grid handles relationships across two.</p></div>
+      <div class="rationale-list">
+        <details open><summary><span>01</span> Navigation <b>Flexbox / 1D</b><i>+</i></summary><div class="rationale-detail"><p><strong>Dimensionality:</strong> A single horizontal row. <strong>Control:</strong> Content-first, with space distributed between the brand and links. <strong>Responsive plan:</strong> The row becomes a compact menu on small screens. Flexbox keeps this fluid with one breakpoint.</p><p class="tradeoff"><strong>Trade-off:</strong> Grid would add unnecessary column tracks for a sequence that only needs alignment and pushing.</p></div></details>
+        <details><summary><span>02</span> Hero <b>Flexbox / 1D</b><i>+</i></summary><div class="rationale-detail"><p><strong>Dimensionality:</strong> Two content blocks flow side by side, then stack. <strong>Control:</strong> Content-first so the copy can grow naturally. <strong>Responsive plan:</strong> Alignment changes from row to column without repositioning individual items.</p><p class="tradeoff"><strong>Trade-off:</strong> Grid could define exact columns, but would make the art and copy more rigid than the story needs.</p></div></details>
+        <details><summary><span>03</span> Skills <b>Grid / 2D</b><i>+</i></summary><div class="rationale-detail"><p><strong>Dimensionality:</strong> Cards need consistent relationships across rows and columns. <strong>Control:</strong> Layout-first equal tracks create a calm scan. <strong>Responsive plan:</strong> Auto-fit collapses columns fluidly.</p><p class="tradeoff"><strong>Trade-off:</strong> Flex-wrap can make rows uneven and makes shared column alignment harder to maintain.</p></div></details>
+        <details><summary><span>04</span> Projects <b>Grid / 2D</b></summary><div class="rationale-detail"><p><strong>Dimensionality:</strong> Varied cards need coordinated horizontal and vertical gaps. <strong>Control:</strong> Layout-first, with named spans for visual hierarchy. <strong>Responsive plan:</strong> The same grid becomes one column on mobile.</p><p class="tradeoff"><strong>Trade-off:</strong> A flex layout would need width hacks to reproduce the intentional asymmetry.</p></div></details>
+        <details><summary><span>05</span> Footer & contact <b>Flexbox / 1D</b><i>+</i></summary><div class="rationale-detail"><p><strong>Dimensionality:</strong> Social links and copyright sit on opposite ends of one row. <strong>Control:</strong> Content-first, pushed apart with <code>space-between</code>. <strong>Responsive plan:</strong> It wraps into a column on narrow screens.</p><p class="tradeoff"><strong>Trade-off:</strong> Grid would work, but adds tracks where one-axis distribution is the entire problem.</p></div></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell" id="contact">
+    <div class="footer-top"><div><p class="eyebrow">05 / SAY HELLO</p><h2>Have a good idea?<br><em>Let's make it real.</em></h2></div><a class="button button-primary" href="mailto:hello@markquimora.dev">Start a conversation <span>↗</span></a></div>
+    <form class="contact-form" id="contact-form"><label><span>Your email</span><input type="email" placeholder="you@example.com" required></label><label><span>What are you working on?</span><input type="text" placeholder="A new project, a collaboration..." required></label><button class="button button-light" type="submit">Send message <span>↗</span></button><p class="form-status" role="status"></p></form>
+    <div class="footer-bottom"><p>© 2026 Mark Joseph Quimora</p><div class="social-links"><a href="#top">LinkedIn ↗</a><a href="#top">GitHub ↗</a><a href="#rationale">Rationale log ↗</a></div><p class="footer-location">Based in the Philippines · Working globally</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
