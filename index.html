@@ -66,14 +66,13 @@
       </div>
     </section>
 
-    <section class="rationale-section section-shell" id="rationale">
-      <div class="rationale-intro"><p class="eyebrow">04 / LAYOUT RATIONALE</p><h2>Every layout<br><em>has a reason.</em></h2><p>This page is also a study in choosing the right tool. Flexbox handles content that flows in one direction; Grid handles relationships across two.</p></div>
-      <div class="rationale-list">
-        <details open><summary><span>01</span> Navigation <b>Flexbox / 1D</b><i>+</i></summary><div class="rationale-detail"><p><strong>Dimensionality:</strong> A single horizontal row. <strong>Control:</strong> Content-first, with space distributed between the brand and links. <strong>Responsive plan:</strong> The row becomes a compact menu on small screens. Flexbox keeps this fluid with one breakpoint.</p><p class="tradeoff"><strong>Trade-off:</strong> Grid would add unnecessary column tracks for a sequence that only needs alignment and pushing.</p></div></details>
-        <details><summary><span>02</span> Hero <b>Flexbox / 1D</b><i>+</i></summary><div class="rationale-detail"><p><strong>Dimensionality:</strong> Two content blocks flow side by side, then stack. <strong>Control:</strong> Content-first so the copy can grow naturally. <strong>Responsive plan:</strong> Alignment changes from row to column without repositioning individual items.</p><p class="tradeoff"><strong>Trade-off:</strong> Grid could define exact columns, but would make the art and copy more rigid than the story needs.</p></div></details>
-        <details><summary><span>03</span> Skills <b>Grid / 2D</b><i>+</i></summary><div class="rationale-detail"><p><strong>Dimensionality:</strong> Cards need consistent relationships across rows and columns. <strong>Control:</strong> Layout-first equal tracks create a calm scan. <strong>Responsive plan:</strong> Auto-fit collapses columns fluidly.</p><p class="tradeoff"><strong>Trade-off:</strong> Flex-wrap can make rows uneven and makes shared column alignment harder to maintain.</p></div></details>
-        <details><summary><span>04</span> Projects <b>Grid / 2D</b></summary><div class="rationale-detail"><p><strong>Dimensionality:</strong> Varied cards need coordinated horizontal and vertical gaps. <strong>Control:</strong> Layout-first, with named spans for visual hierarchy. <strong>Responsive plan:</strong> The same grid becomes one column on mobile.</p><p class="tradeoff"><strong>Trade-off:</strong> A flex layout would need width hacks to reproduce the intentional asymmetry.</p></div></details>
-        <details><summary><span>05</span> Footer & contact <b>Flexbox / 1D</b><i>+</i></summary><div class="rationale-detail"><p><strong>Dimensionality:</strong> Social links and copyright sit on opposite ends of one row. <strong>Control:</strong> Content-first, pushed apart with <code>space-between</code>. <strong>Responsive plan:</strong> It wraps into a column on narrow screens.</p><p class="tradeoff"><strong>Trade-off:</strong> Grid would work, but adds tracks where one-axis distribution is the entire problem.</p></div></details>
+    <section class="skills-summary section-shell" id="rationale">
+      <div class="rationale-intro"><p class="eyebrow">04 / SKILLS SET</p><h2>Every layout<br><em>has a reason.</em></h2><p>I bring a practical mix of technical ability, problem-solving, and dependable collaboration to every project.</p></div>
+      <div class="skills-summary-list">
+        <article><span>01</span><div><h3>Web Development</h3><p>Building responsive and accessible pages with HTML, CSS, and JavaScript.</p></div></article>
+        <article><span>02</span><div><h3>Systems Thinking</h3><p>Breaking requirements into clear steps and practical solutions.</p></div></article>
+        <article><span>03</span><div><h3>Data &amp; Technology</h3><p>Learning digital tools quickly and applying technology to real needs.</p></div></article>
+        <article><span>04</span><div><h3>Careful Collaboration</h3><p>Communicating clearly, taking ownership, and contributing reliably.</p></div></article>
       </div>
     </section>
   </main>
@@ -81,7 +80,7 @@
   <footer class="site-footer section-shell" id="contact">
     <div class="footer-top"><div><p class="eyebrow">05 / SAY HELLO</p><h2>Have a good idea?<br><em>Let's make it real.</em></h2></div><a class="button button-primary" href="mailto:hello@markquimora.dev">Start a conversation <span>↗</span></a></div>
     <form class="contact-form" id="contact-form"><label><span>Your email</span><input type="email" placeholder="you@example.com" required></label><label><span>What are you working on?</span><input type="text" placeholder="A new project, a collaboration..." required></label><button class="button button-light" type="submit">Send message <span>↗</span></button><p class="form-status" role="status"></p></form>
-    <div class="footer-bottom"><p>© 2026 Mark Joseph Quimora</p><div class="social-links"><a href="#top">LinkedIn ↗</a><a href="#top">GitHub ↗</a><a href="#rationale">Rationale log ↗</a></div><p class="footer-location">Based in the Philippines · Working globally</p></div>
+    <div class="footer-bottom"><p>© 2026 Mark Joseph Quimora</p><div class="social-links"><a href="#top">LinkedIn ↗</a><a href="#top">GitHub ↗</a><a href="#rationale">Skills set ↗</a></div><p class="footer-location">Based in the Philippines · Working globally</p></div>
   </footer>
   <script src="script.js"></script>
 </body>
